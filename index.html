@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Contact Form</title>
+</head>
+<body>
+    <h1>Contact Us</h1>
+    <main>
+        <form method="get" action="/">
+            <h2>How can we help you?</h2>
+            <section>
+                <ul>
+                    <li>
+                        <label for="username">Your Name</label>
+                        <input type="text" required id="username" name="username" placeholder="Enter your name">
+                    </li>
+                    <li>
+                        <label for="password">Your E-Mail Address</label>
+                        <input type="password" required id="password" name="password" placeholder="Enter your password">
+                    </li>
+                    <li>
+                        <label for="phone-number">Your Phone Number</label>
+                        <input type="tel" required id="phone-number" name="phone-number" placeholder="Enter your phone number" minlength="7">
+                    </li>
+                    <li>
+                        <label for="message-box">Your Message</label>
+                        <textarea name="message-box" id="message-box" rows="8" required></textarea>
+                    </li>
+                    <li>
+                        <label for="find-us" id="how-did-you-find-us">How did you find us?</label>
+                        <select name="find-us" id="find-us" required>
+                            <option value="Web">Web Search</option>
+                            <option value="Ad">Advertisement</option>
+                            <option value="Web">Recommendation</option>
+                        </select>
+                    </li>
+                </ul>
+            </section>
+            <h2>How should we reply?</h2>
+            <section>
+                <ul>
+                    <li>
+                        <div class="form-control-inline">
+                            <input type="radio" name="confirmation" id="phone" value="phone">
+                            <label for="phone">Call me</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="form-control-inline">
+                            <input type="radio" name="confirmation" id="email" value="email">
+                            <label for="email">Send me an email</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="form-control-inline">
+                            <input type="radio" name="confirmation" id="no-reply" value="no-reply">
+                            <label for="no-reply">Don't Reply</label>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <section class="terms-section">
+                <div class="form-control-inline">
+                    <input type="checkbox" id="terms" required>
+                    <label for="terms">Accept Terms</label>
+                </div>
+            </section>
+            <section class="btn-group">
+                <button type="reset">Clear</button>
+                <button id="submit">Submit</button>
+            </section>
+        </form>
+    </main>
+</body>
+</html>
